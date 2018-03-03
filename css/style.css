@@ -144,7 +144,9 @@ header a:hover{
 
 #about{
   text-align: center;
-  background:url('../img/background.jpg') no-repeat fixed 0 -40px;
+  background:url('../img/test2.jpg') no-repeat fixed;
+  background-size: cover;
+  background-position: center top;
   padding-top: 130px;
   padding-bottom: 130px;
   padding-right: 50px;
