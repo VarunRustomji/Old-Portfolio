@@ -9,7 +9,6 @@ html {
     scroll-behavior: smooth
 }
 
-/*Red if needed color:#e8491d*/
 /*Grey:#35424a*/
 /*Yellow:#FED766*/
 
@@ -27,10 +26,13 @@ ul{
 }
 
 /*Front screen*/
-#full-screen {
+#full-screen{
   height: 100vh;
   width: 100%;
-  background:url('../img/new1.jpg') no-repeat fixed 100% 80% ;
+  background:url('../img/try1.jpg') no-repeat fixed;
+  background-size: cover;
+  background-position: center top;
+
 }
 
 /* Header is Nav Bar*/
@@ -68,54 +70,13 @@ header nav{
   margin-top:10px;
 }
 
-/*#front-page #cs {
-  color: #35424a;
-}*/
-
 header a:hover{
   color:#FED766;
   padding-bottom: 20px;
-
 }
-
-/*Work*/
-
-#work{
-  background:url('../img/code.jpg') fixed ;
-  background-size: cover;
-  background-position: center top;
-  padding-top: 130px;
-  padding-bottom: 130px;
-  padding-right: 50px;
-  padding-left: 50px;
-}
-
-.work-text{
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
-.work-title h1 {
-  background-color: #35424a;
-  color: #FED766;
-  font-size:60px;
-  margin-bottom:20px;
-  text-transform: uppercase;
-
-}
-
-.work-content p{
-  text-align: left;
-  font-size: 20px;
-  color: inherit;
-  padding-bottom:40px;
-  width: 90%;
-  margin:auto;
-}
-
-
 
 /* Front Page */
+
 
 #front-page{
   height: 100%;
@@ -144,45 +105,116 @@ header a:hover{
 
 #about{
   text-align: center;
-  background:url('../img/test2.jpg') no-repeat fixed;
-  background-size: cover;
-  background-position: center top;
-  padding-top: 130px;
-  padding-bottom: 130px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding:6em 3em;
+
+  background-color: lightgrey
 }
 
-
 .about-title h1 {
-  background-color: #000000;
-  color: #ffff00;
   font-size:60px;
   margin-bottom:20px;
   text-transform: uppercase;
-
-}
-
-.text{
-  background-color: #d3d3d3;
 }
 
 .about-content p{
   text-align: left;
-  font-size: 20px;
+  font-size: 30px;
   color: inherit;
-  padding-bottom:40px;
+  padding-bottom:20px;
   width: 90%;
   margin:auto;
+}
+
+.button {
+  text-align: left;
+  background-color: black;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+
+  align: left;
+}
+
+/*Work*/
+
+#work{
+  background-color: #121212;
+  padding:6em 3em;
+}
+
+.work-text{
+  /*background-color: #f4f4f4;*/
+  text-align: center;
+}
+
+.work-title h1 {
+
+  color: #FED766;
+  font-size:60px;
+  margin-bottom:20px;
+  text-transform: uppercase;
+}
+
+.test {
+  padding: 2em 2em 2em 4em;
+}
+
+/*//Copy Code*/
+.imgs{
+  height:50px;
+  max-width: 70px;
+
+}
+
+.card{
+  display: inline-grid;
+  background-color: #ddd;
+  border: #fff 0.5px solid;
+  border-radius: 0.2em;
+  margin: 8px;
+  height: 85px;
+  width: 85px;
+  box-shadow: 0 0 0.5em #fff;
+  opacity: 0.7;
+  -moz-transition: all 900ms ease-in;
+  -webkit-transition: all 900ms ease-in;
+  -o-transition: all 900ms ease-in;
+  transition: all 700ms cubic-bezier(.04,1.1,.46,1.56);
+}
+
+.card .imgs{
+  /*display: block;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  -moz-transition: all 900ms ease-in;
+  -webkit-transition: all 900ms ease-in;
+  -o-transition: all 900ms ease-in;
+  transition: all 700ms cubic-bezier(.04,1.1,.46,1.56);
+}
+.card .imgs{
+  filter: blur(1.5px) grayscale(80%);
+}
+.card:hover{
+  transform: scale(1.5, 1.5);
+
+}
+.card:hover .imgs{
+  filter: blur(0px) grayscale(0%);
+  opacity: 1;
+
 }
 
 /*Contact Section*/
 
 #contact{
   text-align: center;
-  background:url('../img/finale.jpg') fixed ;
+  /*background:url('../img/finale.jpg') fixed ;
   background-size: cover;
-  background-position: center top;
+  background-position: center top;*/
   padding-top: 130px;
   padding-bottom: 130px;
   padding-right: 50px;
