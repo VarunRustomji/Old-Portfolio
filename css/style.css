@@ -71,7 +71,9 @@ header nav{
 }
 
 header a:hover{
+  /*color:#FED766;*/
   color:#FED766;
+
   padding-bottom: 20px;
 }
 
@@ -105,9 +107,9 @@ header a:hover{
 
 #about{
   text-align: center;
-  padding:6em 3em;
+  padding:3em 3em;
 
-  background-color: lightgrey
+  background-color: #ffff87;
 }
 
 .about-title h1 {
@@ -117,7 +119,7 @@ header a:hover{
 }
 
 .about-content p{
-  text-align: left;
+  text-align: center;
   font-size: 30px;
   color: inherit;
   padding-bottom:20px;
@@ -128,13 +130,20 @@ header a:hover{
 .button {
   text-align: left;
   background-color: black;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   text-decoration: none;
   border-radius: 10px;
   padding: 20px 20px 20px 20px;
 
   align: left;
+}
+
+.button:hover {
+  /*color: #FED766;*/
+  color: #e8491d;
+
+
 }
 
 /*Work*/
@@ -208,48 +217,15 @@ header a:hover{
 
 }
 
-/*Contact Section*/
+/*Project Section*/
 
-#contact{
+#projects {
   text-align: center;
-  /*background:url('../img/finale.jpg') fixed ;
-  background-size: cover;
-  background-position: center top;*/
-  padding-top: 130px;
-  padding-bottom: 130px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding:6em 3em;
+  background-color: #e8491d;
 
 }
 
-.text-contact{
-  background-color: #d3d3d3;
-  z-index: 1;
-}
-.contact-title h1 {
-  background-color: #35424a;
-  color: #FED766;
-  font-size:60px;
-  margin-bottom:20px;
-  text-transform: uppercase;
-}
-
-.contact-content p{
-  text-align: left;
-  font-size: 20px;
-  color: inherit;
-  padding-bottom:40px;
-  width: 80%;
-  margin:auto;
-}
-
-.icon-bar a {
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: black;
-    font-size: 36px;
-}
 
 
 /* Footer */
@@ -257,11 +233,26 @@ header a:hover{
 footer{
   padding:20px;
   color: black;
-  background-color:#e8491d;
+  background-color:#121212;
   text-align: center;
   font-size: 20px;
+
 }
 
+.icon-bar a {
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: grey;
+    font-size: 36px;
+}
+
+.greeting {
+  font-size: 36px;
+  margin-bottom: 0px;
+  color: lightgrey;
+
+}
 
 
 /* Media Queries */
