@@ -36,7 +36,7 @@ ul{
 }
 
 /* Header is Nav Bar*/
-header{
+/*header{
   background:#35424a;
   color:#ffffff;
   padding-top:30px;
@@ -68,12 +68,33 @@ header #branding h1{
 header nav{
   float:right;
   margin-top:10px;
+}*/
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -80px;
+  width: 100%;
+  display:block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+
+  text-align: center;
+  padding: 15px;
+
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:20px;
 }
 
 header a:hover{
   /*color:#FED766;*/
   color:#FED766;
-
   padding-bottom: 20px;
 }
 
