@@ -12,7 +12,6 @@ html {
 /*Grey:#35424a*/
 /*Yellow:#FED766*/
 
-
 /* Global */
 .container{
   width:90%;
@@ -32,72 +31,29 @@ ul{
   background:url('../img/try1.jpg') no-repeat fixed;
   background-size: cover;
   background-position: center top;
-
 }
 
-/* Header is Nav Bar*/
-/*header{
-  background:#35424a;
-  color:#ffffff;
-  padding-top:30px;
-  padding-bottom: 10px;
-  min-height:70px;
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
 }
-
-header a{
-  color:#ffffff;
-  text-decoration:none;
-  text-transform: uppercase;
-  font-size:20px;
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
-
-header li{
-  float:left;
-  display:inline;
-  padding: 0 20px 0 20px;
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
-
-header #branding{
-  float:left;
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
-
-header #branding h1{
-  margin:0;
-}
-
-header nav{
-  float:right;
-  margin-top:10px;
-}*/
-
-#navbar {
-  background-color: #333;
-  position: fixed;
-  top: -80px;
-  width: 100%;
-  display:block;
-  transition: top 0.3s;
-}
-
-#navbar a {
-  float: right;
-  display: block;
-
-  text-align: center;
-  padding: 15px;
-
-  color:#ffffff;
-  text-decoration:none;
-  text-transform: uppercase;
-  font-size:20px;
-}
-
-header a:hover{
-  /*color:#FED766;*/
-  color:#FED766;
-  padding-bottom: 20px;
-}
-
 /* Front Page */
 
 
@@ -253,11 +209,10 @@ header a:hover{
 
 footer{
   padding:20px;
-  color: #b29eb59e;
-  background-color:#121212;
+  color: #ead5d526 ;
+  background-color: #121212;
   text-align: center;
   font-size: 20px;
-
 }
 
 .icon-bar a {
