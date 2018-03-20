@@ -1,3 +1,4 @@
+//For the typing function
 $(function(){
   $(".write").typed({
     strings: ["Hi, my name Varun! ", ],
@@ -16,3 +17,8 @@ $(function(){
   contentType: 'html'
   });
 });
+
+//For the Welcome animation
+setTimeout(function() {
+  $('.fly-in-text').removeClass('hidden');
+}, 2500);
