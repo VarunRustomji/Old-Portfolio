@@ -21,135 +21,221 @@
   <script src="type.js"></script>
   <!-- StyleSheet  -->
   <link rel="stylesheet" href="./css/style.css">
+
+
+  <style type="text/css">
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  #new_add {
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+  }
+
+  #new_add p{
+    font-size:2em;
+    margin: 0px;
+    color: white;
+    font-family: Open Sans, Arial;
+    padding-top:200px;
+    text-align: center;
+  }
+
+  .fly-in-text {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .fly-in-text li {
+    display: inline-block;
+    /*Change to make it responsive*/
+    margin-right: 50px;
+    font-family: Open Sans, Arial;
+    font-weight: 300;
+    font-size: 4em;
+    color: #fff;
+    opacity: 1;
+    transition: all 2.5s ease;
+  }
+  .fly-in-text li:last-child {
+    margin-right: 0;
+  }
+  .fly-in-text.hidden li {
+    opacity: 0;
+  }
+  .fly-in-text.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+  .fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+  .fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+  .fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+  .fly-in-text.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+  .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+  .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+
+
+  </style>
+
 </head>
 <body>
 
 
 
-  <section id="full-screen">
-    <section id="front-page">
-      <div class="container">
-        <h1>varun rustomji</h1>
-        <div class="container">
-          <p>I'm a <span class="write"></span></p>
-        </div>
-      </section>
-    </section>
+  <!-- <section id="full-screen">
+  <section id="front-page">
+  <div class="container">
+  <h1>varun rustomji</h1>
+  <p>I'm a <span class="write"></span></p>
+</div>
+</section>
+</section> -->
+
+<section id="new_add">
+  <ul class="fly-in-text hidden">
+    <li>W</li>
+    <li>E</li>
+    <li>L</li>
+    <li>C</li>
+    <li>O</li>
+    <li>M</li>
+    <li>E</li>
+  </ul>
+
+  <p>I'm a <span class="write"></span></p>
+</section>
 
 
 
-    <section id="about">
-      <div class="container about-space">
-        <div class="text">
-          <div class="about-title">
-            <h1>About Me</h1>
-          </div>
-          <div class="about-content">
-            <p>Hi my name is Varun, welcome to my site. I am a second year Computer Science student at Simon Fraser University in Vancouver, BC. I am passionate building websites, progressive web apps and mobile apps.
-              I love finding new ways of doing things and coming up with clever solutions to the challenges that arise while completing projects.
-              I also focus on creating aesthetically pleasing, user-centered experiences for web and mobile.
-            </p>
-            <p>I enjoy learning new technologies and using them in creative ways. Keep scrolling to checkout some of my projects and feel free to contact me!
-            </p>
-          </div>
-          <br><br>
-          <a class="button btn-lg" href="resume.docx" target="_blank">
-            <i class="fa fa-download"></i>
-            Check out my resume
-          </a>
-          <br><br><br>
-        </div>
+
+<section id="about">
+  <div class="container about-space">
+    <div class="text">
+      <div class="about-title">
+        <h1>About Me</h1>
       </div>
-    </section>
-
-    <!-- Work section -->
-
-    <section id="work">
-      <div class="container">
-        <div class="work-text">
-          <div class="work-title">
-            <h1>Technologies I uses</h1>
-          </div>
-          <div class="test">
-            <div class="card">
-              <img src="./logo/cpp.svg" class="imgs">
-            </div>
-            <div class="card">
-              <img src="./logo/css3.svg" class="imgs">
-            </div>
-            <div class="card">
-              <img src="./logo/express.svg" class="imgs">
-            </div>
-            <div class="card">
-              <img src="./logo/html5.svg" class="imgs">
-            </div>
-            <div class="card">
-              <img src="./logo/javascript.svg" class="imgs">
-            </div>
-            <div class="card">
-              <img src="./logo/jquery.svg" class="imgs">
-            </div>
-            <div class="card">
-              <img src="./logo/mongoDB.svg" class="imgs">
-            </div>
-            <div class="card">
-              <img src="./logo/nodejs.svg" class="imgs">
-            </div>
-            <div class="card">
-              <img src="./logo/npm.svg" class="imgs">
-            </div>
-            <div class="card">
-              <img src="./logo/sass.svg" class="imgs">
-            </div>
-            <div class="card">
-              <img src="./logo/python.svg" class="imgs">
-            </div>
-            <div class="card">
-              <img src="./logo/bootstrap.svg" class="imgs">
-            </div>
-            <div class="card">
-              <img src="./logo/swift.svg" class="imgs">
-            </div>
-
-
-
-          </div>
-        </div>
+      <div class="about-content">
+        <p>Hi my name is Varun, welcome to my site. I am a second year Computer Science student at Simon Fraser University in Vancouver, BC. I am passionate about building websites, progressive web apps and mobile apps.
+          I love finding new ways to do tedious things and come up with clever solutions to overcome the challenges that arise in my routine life. I like creating thing that are visually appealing and easy to use.
+          I achieve these goal by making the UI as interactive and intuitive as possible to guarantee a pleasant user experience.
+        </p>
+        <p>I enjoy learning new technologies and using them in creative ways. Feel free to checkout my resume and contact me!
+        </p>
       </div>
-    </section>
+      <br><br>
+      <a class="button btn-lg" href="resume.docx" target="_blank">
+        <i class="fa fa-download"></i>
+        Check out my resume
+      </a>
+      <br><br><br>
+    </div>
+  </div>
+</section>
 
-    <!-- Projects Section -->
+<!-- Work section -->
 
-    <section id="projects">
-      <div class="container">
-        <div id="projects-heading">
-          <h1>Projects</h1>
-        </div>
-        <div id="project-content">
-          <p>Projects will be uploaded shortly..</p>
-        </div>
+<section id="work">
+  <div class="container">
+    <div class="work-text">
+      <div class="work-title">
+        <h1>Technologies I uses</h1>
       </div>
-    </section>
+      <div class="test">
+        <div class="card">
+          <img src="./logo/cpp.svg" class="imgs">
+        </div>
+        <div class="card">
+          <img src="./logo/css3.svg" class="imgs">
+        </div>
+        <div class="card">
+          <img src="./logo/express.svg" class="imgs">
+        </div>
+        <div class="card">
+          <img src="./logo/html5.svg" class="imgs">
+        </div>
+        <div class="card">
+          <img src="./logo/javascript.svg" class="imgs">
+        </div>
+        <div class="card">
+          <img src="./logo/jquery.svg" class="imgs">
+        </div>
+        <div class="card">
+          <img src="./logo/mongoDB.svg" class="imgs">
+        </div>
+        <div class="card">
+          <img src="./logo/nodejs.svg" class="imgs">
+        </div>
+        <div class="card">
+          <img src="./logo/npm.svg" class="imgs">
+        </div>
+        <div class="card">
+          <img src="./logo/sass.svg" class="imgs">
+        </div>
+        <div class="card">
+          <img src="./logo/python.svg" class="imgs">
+        </div>
+        <div class="card">
+          <img src="./logo/bootstrap.svg" class="imgs">
+        </div>
+        <div class="card">
+          <img src="./logo/swift.svg" class="imgs">
+        </div>
 
-    <!-- Footer section -->
 
-    <footer>
 
-      <p class="greeting">Keep in touch!</p>
-
-      <div class="icon-bar">
-        <a href="https://www.linkedin.com/in/varun-rustomji-b3a581114/"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/VarunRustomji"><i class="fa fa-github"></i></a>
-        <a href="mailto:vrustomj@sfu.ca"><i class="fa fa-envelope"></i></a>
       </div>
+    </div>
+  </div>
+</section>
 
-      <p>Handmade by me, Copyright &copy; 2017</p>
-    </footer>
+<!-- Projects Section -->
+
+<section id="projects">
+  <div class="container">
+    <div id="projects-heading">
+      <h1>Projects</h1>
+    </div>
+    <div id="project-content">
+      <p>Projects will be uploaded shortly..</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer section -->
+
+<footer>
+
+  <p class="greeting">Keep in touch!</p>
+
+  <div class="icon-bar">
+    <a href="https://www.linkedin.com/in/varun-rustomji-b3a581114/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/VarunRustomji"><i class="fa fa-github"></i></a>
+    <a href="mailto:vrustomj@sfu.ca"><i class="fa fa-envelope"></i></a>
+  </div>
+
+  <p>Handmade by me, Copyright &copy; 2017</p>
+</footer>
+
+<script type="text/javascript">
+
+$(function() {
+
+  setTimeout(function() {
+    $('.fly-in-text').removeClass('hidden');
+  }, 500);
+
+});
 
 
-  
+
+
+</script>
 
 
 
-  </body>
-  </html>
+
+
+</body>
+</html>

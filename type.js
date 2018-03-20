@@ -1,17 +1,17 @@
 $(function(){
   $(".write").typed({
-    strings: ["CS student at SFU ", "Tech enthusiast "],
+    strings: ["Hi, my name Varun! ", ],
     stringsElement: null,
     // typing speed
     typeSpeed: 50,
     // time before typing starts
-    backSpeed: 20,
+    backSpeed: 1,
     // time before backspacing
-    backDelay: 500,
+    backDelay: 900,
     // character for cursor
     cursorChar: "|",
     //looping
-    loop: true,
+    loop: false,
     //contentType
   contentType: 'html'
   });
