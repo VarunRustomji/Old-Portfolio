@@ -1,7 +1,7 @@
 //For the typing function
 $(function(){
   $(".write").typed({
-    strings: ["Hi, my name Varun! ", ],
+    strings: ["Hi, ^300 my name is Varun! ", ],
     stringsElement: null,
     // typing speed
     typeSpeed: 50,
