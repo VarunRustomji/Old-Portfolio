@@ -14,7 +14,7 @@ $(function(){
     //looping
     loop: false,
     //contentType
-  contentType: 'html'
+    contentType: 'html'
   });
 });
 
@@ -22,3 +22,19 @@ $(function(){
 setTimeout(function() {
   $('.fly-in-text').removeClass('hidden');
 }, 2500);
+
+function delay(ms) {
+   ms += new Date().getTime();
+   while (new Date() < ms){}
+}
+
+
+
+//Scroll Down
+
+setTimeout(function() {
+  // console.log(document.getElementsByClassName('arrow').style.visibility);
+  var onj = document.getElementById("scroll").style.visibility='visible';
+  // console.log(onj);
+
+}, 4000);
