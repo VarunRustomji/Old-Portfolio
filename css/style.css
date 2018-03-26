@@ -103,18 +103,7 @@ ul{
 }
 
 /* Scroll Section */
-#scroll{
-  margin-top: 25%;
-  position: relative;
-  font-size: 48px;
-  text-align: center;
-  transform: rotate(90deg);
-  animation: bouncearrow 1s infinite;
-  color: #ffc728;
-  animation-delay: 4s;
-  visibility: hidden;
 
-}
 
 @-webkit-keyframes bouncearrow{
 0%{top: 0px}
