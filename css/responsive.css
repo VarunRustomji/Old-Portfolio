@@ -1,0 +1,137 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width : 380px) {
+
+
+	/*Front Page Complete*/
+	.container{
+	  width:100%;
+	  margin:auto;
+	  overflow:hidden;
+	}
+
+	#new_add {
+	  background-color: black;
+	}
+
+	#new_add p{
+	  font-size: 8vw;
+	  margin: 0px;
+	  color: white;
+	  font-family: Open Sans, Arial;
+	  /*padding-top:150px;*/
+		top: 10%;
+	  text-align: center;
+	}
+
+	.fly-in-text li {
+	  display: inline-block;
+	  /*Change to make it responsive*/
+	  margin-right: 1vw;
+	  font-family: Open Sans, Arial;
+	  font-weight: 300;
+	  font-size: 7vw;
+	  color: #fff;
+	  opacity: 1;
+	  transition: all 2.5s ease;
+	}
+
+	#scroll{
+	  margin-top: 80%;
+	  position: relative;
+	  font-size: 10vw;
+	  text-align: center;
+	  transform: rotate(90deg);
+	  animation: bouncearrow 1s infinite;
+	  color: #ffc728;
+	  animation-delay: 4s;
+	  visibility: hidden;
+	}
+
+
+
+
+
+
+}
+
+
+/* Landscape Mobile */
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+
+	.container{
+	  width:100%;
+	  margin:auto;
+	  overflow:hidden;
+	}
+
+	#new_add {
+	  background-color: grey;
+	}
+
+	#new_add p{
+	  font-size: 6vw;
+	  margin: 0px;
+	  color: white;
+	  font-family: Open Sans, Arial;
+	  /*padding-top:150px;*/
+		top: 10%;
+	  text-align: center;
+	}
+
+
+	.fly-in-text li {
+	  display: inline-block;
+	  /*Change to make it responsive*/
+	  margin-right: 3vw;
+	  font-family: Open Sans, Arial;
+	  font-weight: 300;
+	  font-size: 5vw;
+	  color: #fff;
+	  opacity: 1;
+	  transition: all 2.5s ease;
+	}
+
+	#scroll{
+	  margin-top: 43%;
+	  position: relative;
+	  font-size: 48px;
+	  text-align: center;
+	  transform: rotate(90deg);
+	  animation: bouncearrow 1s infinite;
+	  color: #ffc728;
+	  animation-delay: 4s;
+	  visibility: hidden;
+	}
+
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width : 768px) and (max-width : 991px) {
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width : 992px) and (max-width : 1199px) {
+
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width : 1200px) and (max-width : 1279px) {
+
+
+}
+
+/* Large devices (large desktops, 1280px and up) */
+@media screen and (min-width:1280px) and (max-width:1599px) {
+
+}
+
+/* Extra Large devices (large desktops, 1600px and up) */
+@media screen and (min-width:1600px) and (max-width:1920px) {
+
+}
+
+/*responsive ends*/
